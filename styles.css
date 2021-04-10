@@ -3,6 +3,12 @@
 /* font-family: 'Dosis', sans-serif;
 font-family: 'Lobster Two', cursive; */
 
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
 html, body, .page {
     width: 100%;
     height: 100%;
@@ -14,25 +20,7 @@ html, body, .page {
     -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
     color: #fff;
     overflow: hidden; 
-    text-transform: initial;
   }
-  
-h1, h2, h3{
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-  }
-
-p{
-    font-family: 'Lobster Two', cursive;
-  }
-
-  p,h1, h2, h3{
-    position: relative;
-    width: 50%;
-    margin: 10px auto;
-    top:100px;
-
-}
   
   .page {
     position: absolute;
@@ -53,8 +41,16 @@ p{
   #p3 { background: gold; }
   #p4 { background: deeppink; }
   #p5 { background: rebeccapurple; }
-  #p6 { background: darkslateblue; }
-  #p7 { background: tomato; }
+  #p6 { background-image: url(./pictures/testperson.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+}
+  #p7 { background-image: url(./pictures/testmulti.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;  
+}
   #p8 { background: gold; }
   #p9 { background: deeppink; }
   #p10 { background: rebeccapurple; }
@@ -81,31 +77,31 @@ p{
     transition-delay: .4s !important;
   }
   
-  #quien-soy:target #p2,
-  #cosas-feliz:target #p3,
-  #cosas-enojar:target #p4,
-  #unico:target #p5,
-  #test-person:target #p6,
-  #test-intel:target #p7,
-  #decidi:target #p8,
-  #metas:target #p9,
-  #gratitude:target #p10,
-  #social:target #p11,
-  #footer:target #p12{
+  #quien-soy:target #p1,
+  #cosas-feliz:target #p1,
+  #cosas-enojar:target #p1,
+  #unico:target #p1,
+  #test-person:target #p1,
+  #test-intel:target #p1,
+  #decidi:target #p1,
+  #metas:target #p1,
+  #gratitude:target #p1,
+  #social:target #p1,
+  #footer:target #p1{
     background: black;
   }
   
-  #quien-soy:target #p2 .icon,
-  #cosas-feliz:target #p3 .icon,
-  #cosas-enojar:target #p4 .icon,
-  #unico:target #p5 .icon,
-  #test-person:target #p6 .icon,
-  #tes-intel:target #p7 .icon,
-  #decidi:target #p8 .icon,
-  #metas:target #p9 .icon,
-  #gratitude:target #p10.icon,
-  #social:target #p11.icon,
-  #footer:target #p12 .icon{
+  #quien-soy:target #p1 .icon,
+  #cosas-feliz:target #p1 .icon,
+  #cosas-enojar:target #p1 .icon,
+  #unico:target #p1 .icon,
+  #test-person:target #p1 .icon,
+  #test-intel:target #p1 .icon,
+  #decidi:target #p1 .icon,
+  #metas:target #p1 .icon,
+  #gratitude:target #p1.icon,
+  #social:target #p1.icon,
+  #footer:target #p1 .icon{
     filter: blur(3px);
   }
   
@@ -146,12 +142,12 @@ p{
   #cosas-enojar:target #cuatro,
   #unico:target #cinco,
   #test-peron:target #seis,
-  #tes-intel:target #siete,
+  #test-intel:target #siete,
   #decidi:target #ocho,
   #metas:target #nueve,
-  #gratitude:target #nueve,
-  #social:target #diez,
-  #footer:target #once {
+  #gratitude:target #diez,
+  #social:target #once,
+  #footer:target #doce {
     transform: scale(1.2) !important;
     -webkit-transform: scale(1.2) !important;
     -moz-transform: scale(1.2) !important;
@@ -160,18 +156,25 @@ p{
   
   ul {
     position: fixed;
+    overflow: scroll;
     z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
-    margin: auto;
+    /* margin: auto; */
     height: 100%;
     width: 10%;
     padding: 0;
     text-align: center;
-    margin: 10px;
+    margin: 0;
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+
    }
   
+   ul::-webkit-scrollbar{
+       width: 1px;
+   }
+
   #menu .icon {
     margin: 30px 0;
     transition: all .5s ease-out !important;
@@ -184,46 +187,40 @@ p{
     text-decoration: none;
   }
   
-  .title, .hint {
-    display: block;
+  .title, .hint, ol {
+    display: inline-block;
+    
   }
+
   
   .title {
-    font-size: 38px;
+    font-size: 20px;
+    font-family: 'Lobster Two', cursive;
+    text-transform: capitalize;
+
   }
   
   .hint {
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    text-transform: initial;
+
+
   }
   
   #p4 .hint {
     display: inherit !important;
   }
   
-  .hint a {
-    color: yellow;
-    transition: all 250ms ease-out;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-  }
-  
-  .hint a:hover {
-    color: #FFF;
-  }
-  
-  .line-trough {
-    text-decoration: line-through;
-  }
   
   .page .icon {
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
-    right: 10%;
+    right: 0;
     left: 0;
-    width: 270px;
-    height: 170px;
+    width: 70%;
+    height: 100%;
     margin: auto;
     text-align: center;
     font-size: 80px;
@@ -236,7 +233,10 @@ p{
     -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
     -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
     -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    
   }
+
+  
   
   .page#p1 .icon {
     height: 220px;
@@ -246,23 +246,52 @@ p{
     transform: translateX(10%) !important;
   }
   
-  #quien-soy:target .page #p2 .icon,
-  #cosas-feliz:target .page #p3 .icon,
-  #cosas-enojar:target .page #p4 .icon,
-  #unico:target #p5 .page .icon,
-  #test-person:target .page #p6 .icon,
-  #tes-intel:target .page #p7 .icon,
-  #decidi:target #p8 .page .icon,
-  #metas:target #p9 .page .icon,
-  #gratitude:target .page #p10.icon,
-  #social:target .page #p11.icon,
-  #footer:target .page #p12 .icon{
+  #quien-soy:target .page#p2 .icon,
+  #cosas-feliz:target .page#p3 .icon,
+  #cosas-enojar:target .page#p4 .icon,
+  #unico:target  .page#p5 .icon,
+  #test-person:target .page#p6 .icon,
+  #test-intel:target .page#p7 .icon,
+  #decidi:target .page#p8 .icon,
+  #metas:target  .page#p9 .icon,
+  #gratitude:target .page#p10 .icon,
+  #social:target .page#p11 .icon,
+  #footer:target .page#p12 .icon{
     transform: translateX(0) !important;
     -webkit-transform: translateX(0) !important;
     -moz-transform: translateX(0) !important;
     -o-transform: translateX(0) !important;
     transition-delay: 1s;
   }
+
+/* -------------------------CUSTOM STYLES 2--------------------- */
   
-  
-  
+img{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 6px 6px 1px rgba(43, 165, 63, 0.466);
+}
+
+#p1  section{
+    width: 700px;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 100px auto;
+    
+
+}
+
+ol{
+    text-align: left;
+}
+
+#p6 .title, #p7 .title{
+    position: absolute;
+    top: 0;
+    color: rgb(37, 35, 35);
+}
+
+
+
