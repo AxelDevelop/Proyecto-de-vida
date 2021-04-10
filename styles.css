@@ -1,0 +1,268 @@
+/* -----------------fonts-------------------- */
+
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Lobster Two', cursive; */
+
+html, body, .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+    -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+    color: #fff;
+    overflow: hidden; 
+    text-transform: initial;
+  }
+  
+h1, h2, h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+  }
+
+p{
+    font-family: 'Lobster Two', cursive;
+  }
+
+  p,h1, h2, h3{
+    position: relative;
+    width: 50%;
+    margin: 10px auto;
+    top:100px;
+
+}
+  
+  .page {
+    position: absolute;
+  }
+  
+  #p1 {
+    left: 0;
+    text-align: center;
+  }
+  
+  #p2, #p3, #p4, #p5, #p6, #p7,#p8,#p9,#p10,#p11, #p12{
+    left: 200%;
+    text-align: center;
+  }
+  
+  #p1 { background: darkslateblue; }
+  #p2 { background: tomato; }
+  #p3 { background: gold; }
+  #p4 { background: deeppink; }
+  #p5 { background: rebeccapurple; }
+  #p6 { background: darkslateblue; }
+  #p7 { background: tomato; }
+  #p8 { background: gold; }
+  #p9 { background: deeppink; }
+  #p10 { background: rebeccapurple; }
+  #p11 { background: rebeccapurple; }
+  #p12 { background: rebeccapurple; }
+
+
+  
+  #quien-soy:target #p2,
+  #cosas-feliz:target #p3,
+  #cosas-enojar:target #p4,
+  #unico:target #p5,
+  #test-person:target #p6,
+  #test-intel:target #p7,
+  #decidi:target #p8,
+  #metas:target #p9,
+  #gratitude:target #p10,
+  #social:target #p11,
+  #footer:target #p12{
+    transform: translateX(-190%);
+    -webkit-transform: translateX(-190%);
+    -moz-transform: translateX(-190%);
+    -o-transform: translateX(-190%);
+    transition-delay: .4s !important;
+  }
+  
+  #quien-soy:target #p2,
+  #cosas-feliz:target #p3,
+  #cosas-enojar:target #p4,
+  #unico:target #p5,
+  #test-person:target #p6,
+  #test-intel:target #p7,
+  #decidi:target #p8,
+  #metas:target #p9,
+  #gratitude:target #p10,
+  #social:target #p11,
+  #footer:target #p12{
+    background: black;
+  }
+  
+  #quien-soy:target #p2 .icon,
+  #cosas-feliz:target #p3 .icon,
+  #cosas-enojar:target #p4 .icon,
+  #unico:target #p5 .icon,
+  #test-person:target #p6 .icon,
+  #tes-intel:target #p7 .icon,
+  #decidi:target #p8 .icon,
+  #metas:target #p9 .icon,
+  #gratitude:target #p10.icon,
+  #social:target #p11.icon,
+  #footer:target #p12 .icon{
+    filter: blur(3px);
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 32px;
+    display: block;
+  }
+  
+  ul .icon:hover {
+    opacity: 0.5;
+  }
+  
+  .page .icon .title {
+    line-height: 2;
+  }
+  
+  #quien-soy:target ul .icon,
+  #cosas-feliz:target ul .icon,
+  #cosas-enojar:target ul .icon,
+  #unico:target ul .icon,
+  #test-peron:target ul .icon,
+  #test-intel:target ul .icon,
+  #decidi:target ul .icon,
+  #metas:target ul .icon,
+  #gratitude:target ul .icon,
+  #social:target ul .icon,
+  #footer:target ul .icon{
+    transform: scale(.6);
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -o-transform: scale(.6);
+    transition-delay: .25s;
+  }
+  
+  #quien-soy:target #dos,
+  #cosas-feliz:target #tres,
+  #cosas-enojar:target #cuatro,
+  #unico:target #cinco,
+  #test-peron:target #seis,
+  #tes-intel:target #siete,
+  #decidi:target #ocho,
+  #metas:target #nueve,
+  #gratitude:target #nueve,
+  #social:target #diez,
+  #footer:target #once {
+    transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+  
+  ul {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 100%;
+    width: 10%;
+    padding: 0;
+    text-align: center;
+    margin: 10px;
+   }
+  
+  #menu .icon {
+    margin: 30px 0;
+    transition: all .5s ease-out !important;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .title, .hint {
+    display: block;
+  }
+  
+  .title {
+    font-size: 38px;
+  }
+  
+  .hint {
+    font-size: 13px;
+  }
+  
+  #p4 .hint {
+    display: inherit !important;
+  }
+  
+  .hint a {
+    color: yellow;
+    transition: all 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+  }
+  
+  .hint a:hover {
+    color: #FFF;
+  }
+  
+  .line-trough {
+    text-decoration: line-through;
+  }
+  
+  .page .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10%;
+    left: 0;
+    width: 270px;
+    height: 170px;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1.3;
+    transform: translateX(360%);
+    -webkit-transform: translateX(360%);
+    -moz-transform: translateX(360%);
+    -o-transform: translateX(360%);
+    transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+    -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  }
+  
+  .page#p1 .icon {
+    height: 220px;
+  }
+  
+  .page#p1 .icon {
+    transform: translateX(10%) !important;
+  }
+  
+  #quien-soy:target .page #p2 .icon,
+  #cosas-feliz:target .page #p3 .icon,
+  #cosas-enojar:target .page #p4 .icon,
+  #unico:target #p5 .page .icon,
+  #test-person:target .page #p6 .icon,
+  #tes-intel:target .page #p7 .icon,
+  #decidi:target #p8 .page .icon,
+  #metas:target #p9 .page .icon,
+  #gratitude:target .page #p10.icon,
+  #social:target .page #p11.icon,
+  #footer:target .page #p12 .icon{
+    transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+    -moz-transform: translateX(0) !important;
+    -o-transform: translateX(0) !important;
+    transition-delay: 1s;
+  }
+  
+  
+  
