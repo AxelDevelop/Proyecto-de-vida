@@ -42,25 +42,44 @@ html, body, .page {
     text-align: center;
   }
   
-  #p1 { background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);}
-  #p2 { background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);}
-  #p3 { background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);}
-  #p4 { background-image: linear-gradient(to left, #e8198b 0%, #3782aa 100%);}
-  #p5 { background-image: linear-gradient(320deg, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%); }
-  #p6 { background-image: url(./pictures/testperson.png); 
+  #p1 { 
+    background-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%);
+  }
+  #p2 { 
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+  }
+  #p3 { 
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  }
+  #p4 { 
+    background-image: linear-gradient(to left, #e8198b 0%, #3782aa 100%);
+  }
+  #p5 { 
+    background-image: linear-gradient(320deg, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%); 
+  }
+  #p6 { 
+    background-image: url(./pictures/testperson.png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;    
 }
-  #p7 { background-image: url(./pictures/testmulti.png); 
+  #p7 { 
+    background-image: url(./pictures/testmulti.png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;  
 }
-  #p8 { background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);}
-  #p9 {background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);}
-  #p10 { background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%); }
-  #p11 { background: rebeccapurple; }
+  #p8 { 
+    background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+  }
+  #p9 {
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+  }
+  #p10 { 
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%); 
+  }
+  #p11 { 
+    background: rebeccapurple; }
 
 
   
@@ -209,7 +228,7 @@ html, body, .page {
 
   
   .title {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Lobster Two', cursive;
     text-transform: capitalize;
     color: black;
@@ -219,7 +238,7 @@ html, body, .page {
 
   .title:hover{
     text-decoration: underline;
-    font-size: 21px;
+    font-size: 26px;
     transition-duration: 2s;
     transition-timing-function: ease-in;
   
@@ -301,17 +320,9 @@ img{
     box-shadow: 6px 6px 1px rgba(117, 124, 118, 0.466);
 }
 
-#p1  section{
-    width: 700px;
-    display:grid;
-    grid-template-columns: 1fr;
-    margin: 100px auto;
-    
-
-}
 
 ol{
-    text-align: left;
+  text-align: left;
 }
 
 li{
@@ -320,40 +331,28 @@ li{
 }
 
 #p6 .title, #p7 .title{
-    position: absolute;
+  position: absolute;
     top: 0;
     color: rgb(37, 35, 35);
 }
 
 
+#p1 section{
+    width: 700px;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin: 100px auto;
+    
 
-#p11 span {
-  margin: 150px auto;
-  color: rgb(206, 229, 231);
-  font-size: 40px;
-  font-family: 'Lobster Two', cursive;
-  text-transform: capitalize;
-  font-weight: 700;
-  display: block;
-  
 }
 
-#p11 span .icon2{
-  background-image:  linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
-  font-size: 200px;
-  font-weight: 700;
-  position: absolute;
-  top: 200px;
-  left: 580px;
-  border-radius: 100px;
-}
 
 #p9 span {
   display: flex;
   flex-direction: row;
   margin: 20px;
   font-size: 17px;
-    
+  
 }
 #p9 span  p::first-line{
   font-weight: 900;
@@ -378,3 +377,24 @@ li{
   font-size: 20px;
 }
 
+
+#p11 span {
+  margin: 150px auto;
+  color: rgb(206, 229, 231);
+  font-size: 40px;
+  font-family: 'Lobster Two', cursive;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: block;
+  
+}
+
+#p11 span .icon2{
+  background-image:  linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  font-size: 200px;
+  font-weight: 700;
+  position: absolute;
+  top: 200px;
+  left: 580px;
+  border-radius: 100px;
+}
